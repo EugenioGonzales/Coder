@@ -25,45 +25,42 @@
     <header class="Site-header">
       <div>
         <h1 class="promo-section__title">
-          <a href="index_bs.html">Easy Airlines</a>
+          <a href="ofertas_de_vuelo.html">Easy Airlines</a>
         </h1>
       </div>
       <nav class="main-nav" role="navigation">
-        <ul class="menu-list" aria-label="Navegación principal">
+        <div id="toggle-menu" class="toggle-menu">
+          <img src="Imagenes/Logo/hamburger-menu-icon.jpg" alt="hamburger-menuicon" />
+        </div>
+        <ul id="menu-list" class="menu-list" aria-label="Navegación principal">
           <li class="menu-item">
-            <a href="index_bs.html" class="menu-item__link"
-              >Ofertas de vuelos</a
-            >
+            <a href="ofertas_de_vuelo.html" class="menu-item__link">Ofertas de vuelos</a>
           </li>
           <li class="menu-item">
-            <a href="Mis Viajes.html" class="menu-item__link">Mis Viajes</a>
+            <a href="mis_viajes.html" class="menu-item__link">Mis Viajes</a>
           </li>
           <li class="menu-item">
-            <a href="Millas_bs.html" class="menu-item__link">Millas</a>
+            <a href="millas.html" class="menu-item__link">Millas</a>
           </li>
           <li class="menu-item">
-            <a href="Ayuda.html" class="menu-item__link">Ayuda</a>
+            <a href="ayuda.html" class="menu-item__link">Ayuda</a>
           </li>
           <li class="menu-item">
-            <a href="Menu.html" class="menu-item__link">Menu</a>
+            <a href="menu.html" class="menu-item__link">Menu</a>
           </li>
         </ul>
       </nav>
     </header>
-
+  
     <main class="banner">
-      <div class="image-back">
-        <img
-          class="img-banner"
-          src="Imagenes/Banners/banner_landing_san_andres_v02.jpg"
-          alt="Playas de verano"
-        />
+      <div class="image-container">
+        <img class="img-banner" src="Imagenes/Img de viajes/playa_MisViajes.jpg" alt="Playas_de_verano" />
       </div>
       <div class="perfil-name-container-fluid">
         <div class="text-center-title-welcome">Bienvenído</div>
       </div>
       <div class="welcome-perfil">
-        <div class="status.container">
+        <div class="status-container">
           <span class="title">Completa tu perfil</span>
         </div>
       </div>
@@ -73,11 +70,7 @@
             <input type="email" class="form__input" placeholder="E-mail" />
           </div>
           <div class="form_section">
-            <input
-              type="password"
-              class="form__input"
-              placeholder="Contraseña"
-            />
+            <input type="password" class="form__input" placeholder="Contraseña" />
           </div>
           <div class="form__section">
             <input type="submit" class="form__input" />
@@ -86,55 +79,37 @@
         <div class="form-img">
           <div class="img-container">
             <div>
-              <img
-                src="Imagenes/Logo/iphone-email-computer-icons-symbol-envelope.jpg"
-                title="Loco-email"
-              />
+              <img src="Imagenes/Logo/iphone-email-computer-icons-symbol-envelope.jpg" title="Loco-email" />
             </div>
           </div>
         </div>
-        <div class="Gestion">
-          <p>
-            Gestiona tu información, preferencias y seguridad para mejorar tu
-            experiencia en Easy Airlines.
-          </p>
+        <div class="gestion">
+          <p>Gestiona tu información, preferencias y seguridad para mejorar tu experiencia en Easy Airlines.</p>
         </div>
       </div>
-      <div class="TabH">
-        <ul class="Tab">
+      <div class="tabH">
+        <ul class="tab">
           <li class="Novedades">
-            <a href="#"
-              ><img
-                class="ico-exclamacion"
-                src="Imagenes/Banners/icono-!.jpg"
-                title="icono-exclamacion"
-              /><span>Novedades</span></a
-            >
+            <a href="#"><img class="ico-exclamacion" src="Imagenes/Banners/icono-!.jpg" title="icono-exclamacion" /><span>Novedades</span></a>
           </li>
           <li class="ico-miPerfil">
-            <a href="##"
-              ><img
-                class="ico-MP"
-                src="Imagenes/Banners/icono-Person.jpg"
-                title="icono-miperfil"
-              />
-              <span>Mi perfil</span></a
-            >
+            <a href="##"><img class="ico-MP" src="Imagenes/Banners/icono-Person.jpg" title="icono-miperfil" /><span>Mi perfil</span></a>
           </li>
           <li class="misViajes">
-            <a href="###"
-              ><img
-                class="ico-MV"
-                src="Imagenes/Banners/icono-plane.jpg"
-                title="icono-plane"
-              /><span>Mis Viajes</span></a
-            >
+            <a href="###"><img class="ico-MV" src="Imagenes/Banners/icono-plane.jpg" title="icono-plane" /><span>Mis Viajes</span></a>
           </li>
         </ul>
       </div>
     </main>
-    <footer class="text-center" role="contentinfo">
+    <footer class="footer-modif" role="contentinfo">
       <p>Derechos reservados 2023 Easy Airlines</p>
     </footer>
+  
+    <script>
+      document.querySelector("#toggle-menu").addEventListener("click", function () {
+        document.querySelector("#menu-list").classList.toggle("active");
+      });
+    </script>
   </body>
+  
 </html>

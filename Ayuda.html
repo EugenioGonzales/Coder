@@ -24,131 +24,147 @@
   </head>
 
   <body>
-    <header class="Site-header">
-      <div>
-        <h1 class="promo-section__title">
-          <a href="index_bs.html">Easy Airlines</a>
-        </h1>
-      </div>
-      <nav class="main-nav" role="navigation">
-        <ul class="menu-list" aria-label="Navegación principal">
-          <li class="menu-item">
-            <a href="index_bs.html" class="menu-item__link">Ofertas de vuelos</a>
-          </li>
-          <li class="menu-item">
-            <a href="Mis Viajes.html" class="menu-item__link">Mis Viajes</a>
-          </li>
-          <li class="menu-item">
-            <a href="Millas_bs.html" class="menu-item__link">Millas</a>
-          </li>
-          <li class="menu-item">
-            <a href="Ayuda.html" class="menu-item__link">Ayuda</a>
-          </li>
-          <li class="menu-item">
-            <a href="Menu.html" class="menu-item__link">Menu</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <section class="Ayuda-section">
-      <picture>
-        <img
-          class="Ayuda-banner"
-          src="Imagenes/Banners/banner-Ayuda-01-jpg.avif"
-          title="Icono-Ayuda"/>
-      </picture>
-      <form class="buscador">
-        <input
-          type="text"
-          name="Viajes"
-          placeholder=" Busca por palabras, por ejemplo: equipaje, reembolsos, asientos..."
-        />
-        <button type="submit">Buscar</button>
-      </form>
-      <button class="ayuda-button">
-        ¿Necesitas ayuda con tu compra online?
-      </button>
-      <div class="ayuda-container">
-        <h2 class="inicio-ayuda">
-          BIENVENIDO AL CENTRO DE AYUDA DE EasyAirlines
-        </h2>
+    <div class="container">
+      <header class="Site-header">
         <div>
-          <p>
-            Encuentra aquí, los temas más consultados y artículos recomendados.
-          </p>
+          <h1 class="promo-section__title">
+            <a href="ofertas_de_vuelo.html">Easy Airlines</a>
+          </h1>
         </div>
-      </div class= "container">
-      <div class="Consulta-categorias">
+        <nav class="main-nav" role="navigation">
+          <div id="toggle-menu" class="toggle-menu">
+            <img
+              src="Imagenes/Logo/hamburger-menu-icon.jpg"
+              alt="hamburger-menuicon"
+            />
+          </div>
+          <ul
+            id="menu-list"
+            class="menu-list"
+            aria-label="Navegación principal"
+          >
+            <li class="menu-item">
+              <a href="ofertas_de_vuelo.html" class="menu-item__link"
+                >Ofertas de vuelos</a
+              >
+            </li>
+            <li class="menu-item">
+              <a href="mis_viajes.html" class="menu-item__link">Mis Viajes</a>
+            </li>
+            <li class="menu-item">
+              <a href="millas.html" class="menu-item__link">Millas</a>
+            </li>
+            <li class="menu-item">
+              <a href="ayuda.html" class="menu-item__link">Ayuda</a>
+            </li>
+            <li class="menu-item">
+              <a href="menu.html" class="menu-item__link">Menu</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <section class="Ayuda-section">
+        <div class="imagen-container">
+          <img class="Ayuda-banner" src="Imagenes/Banners/banner-Ayuda-01-jpg.avif" title="Icono-Ayuda" alt="Icono Ayuda" />
+          <div class="input-container">
+            <div class="buscador">
+              <form>
+                <input type="text" name="Viajes" placeholder="Busca por palabras, por ejemplo: equipaje, reembolsos, asientos..." />
+                <button type="submit">Buscar</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="container-ayuda-total">
+          <button class="ayuda-button">¿Necesitas ayuda con tu compra online?</button>
+          <div class="ayuda-container">
+            <h2 class="inicio-ayuda">BIENVENIDO AL CENTRO DE AYUDA DE EasyAirlines</h2>
+            <div>
+              <p>Encuentra aquí los temas más consultados y artículos recomendados.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      
+      
+      
+
+      <article>
         <h2 class="title-consultas-categorias">
           Puedes realizar tu consulta por categorías
         </h2>
-        
-          <ul class="list-categorias">
-            <li class="list-01">
-              <a class="antes-de-tu-viaje-01">
-                <div>
-                  <img
-                    class="ico-passaport"
-                    src="Imagenes/Banners/icono-passport.jpg"
-                    title="icono-passaport"/>
-                </div>
-                <h3 class="text-antesdetuviaje">ANTES DE TU VIAJE</h3>
-                <p class="text_sub">
-                  Consulta los documentos para  <br> entrar a tu destino, el servicio <br>
-                  de comidas a bordo y más.
-                </p>
-              </a>
-            </li>
-            <li class="list-02">
-              <a class="equipaje-02">
-                <div>
-                  <img
-                    class="ico-equipaje"
-                    src="Imagenes/Banners/Icono-equipaje.jpg"
-                    title="icono-equipaje"/>
-                </div>
-                <h3 class="text-equipaje">EQUIPAJE</h3>
-                <p class="text_sub">
-                  Revisa las dimensiones, peso y  <br>artículos que puedes llevar en
-                  <br>tu equipaje.
-                </p>
-              </a>
-            </li>
-            <li class="list-03">
-              <a class="Tu-Reserva">
-                <div>
-                  <img
-                    class="ico-reserva"
-                    src="Imagenes/Banners/icono-reserva-jpg.png"
-                    title="Icono-reserva"/>
-                    
-                </div>
-                <h3 class="text-reserva">TU RESERVA</h3>
-                <p class="text_sub">
-                  Encuentra temas relacionados  <br>con check-in, cambios de <br>vuelo,
-                  reembolsos y más.
-                </p>
-              </a>
-            </li>
-            <li class="list-04">
-              <a class="Niñosybebés">
-                <div>
-                  <img class="ico-nyb" src="Imagenes/Banners/icono-bebe.jpg"
-                  title="Icono-Niñosybebes"/>
-                </div>
-                <h3 class="text-nyb">NIÑOS Y BEBÉS</h3>
-                <p class="text_sub">
-                  Conoce los requisitos para <br>volar en estado de embarazo, <br>con
-                  niños o bebés
-                </p>
-              </a>
-            </li>
-          </ul>
-        
-      </div>
-    </section>
-    <footer class="text-center" role="contentinfo">
-      <p>Derechos reservados 2023 Easy Airlines</p>
-    </footer>
+        <ul class="list-categorias">
+          <li class="list-01">
+            <a class="antes-de-tu-viaje-01">
+              <div>
+                <img class="ico-passaport" src="Imagenes/Banners/icono-passport.jpg" title="icono-passaport" />
+              </div>
+              <h3 class="text-antesdetuviaje">ANTES DE TU VIAJE</h3>
+              <p class="text_sub">
+                Consulta los documentos para entrar a tu destino, el servicio de comidas a bordo y más.
+              </p>
+            </a>
+          </li>
+          <li class="list-02">
+            <a class="equipaje-02">
+              <div>
+                <img class="ico-equipaje" src="Imagenes/Banners/Icono-equipaje.jpg" title="icono-equipaje" />
+              </div>
+              <h3 class="text-equipaje">EQUIPAJE</h3>
+              <p class="text_sub">
+                Revisa las dimensiones, peso y artículos que puedes llevar en tu equipaje.
+              </p>
+            </a>
+          </li>
+          <li class="list-03">
+            <a class="Tu-Reserva">
+              <div>
+                <img class="ico-reserva" src="Imagenes/Banners/icono-reserva-jpg.png" title="Icono-reserva" />
+              </div>
+              <h3 class="text-reserva">TU RESERVA</h3>
+              <p class="text_sub">
+                Encuentra temas relacionados con check-in, cambios de vuelo, reembolsos y más.
+              </p>
+            </a>
+          </li>
+          <li class="list-04">
+            <a class="Niñosybebés">
+              <div>
+                <img class="ico-nyb" src="Imagenes/Banners/icono-bebe.jpg" title="Icono-Niñosybebes" />
+              </div>
+              <h3 class="text-nyb">NIÑOS Y BEBÉS</h3>
+              <p class="text_sub">
+                Conoce los requisitos para volar en estado de embarazo, con niños o bebés.
+              </p>
+            </a>
+          </li>
+        </ul>
+      </article>
+      
+
+      <footer class="footer-modif" role="contentinfo">
+        <p>Derechos reservados 2023 Easy Airlines</p>
+      </footer>
+    </div>
+    <script>
+      document
+        .querySelector("#toggle-menu")
+        .addEventListener("click", function () {
+          document.querySelector("#menu-list").classList.toggle("active");
+        });
+
+        const listItems = document.querySelectorAll('.list-categorias li');
+
+listItems.forEach((item) => {
+  item.addEventListener('click', () => {
+    listItems.forEach((item) => {
+      item.classList.remove('active');
+    });
+    item.classList.add('active');
+  });
+});
+    </script>
   </body>
 </html>
