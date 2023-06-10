@@ -1,0 +1,108 @@
+  
+/* Estilos generales */
+
+/* Estilos para pantallas más grandes que un tamaño de escritorio */
+@media screen and (min-width: 1024px) {
+    .menu-list {
+      display: flex;
+      flex-grow: 1;
+    }
+  
+    .toggle-menu {
+      display: none;
+    }
+  }
+  
+  /* Responsive Nav */
+  .menu-list {
+    display: none;
+  }
+  
+  .toggle-menu {
+    display: block;
+    position: absolute;
+    top: 0.6rem;
+    right: -0.5rem;
+    cursor: pointer;
+    width: 40px;
+  }
+  
+  .menu-list.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    text-align: center;
+    top: 1.97rem;
+    left: 16.2rem;
+    background-color: #fa2020;
+    padding: 1rem;
+    z-index: 999;
+  }
+  
+  .menu-item {
+    margin-bottom: 10px;
+  }
+  
+  /* Media queries */
+  
+  /* Responsive Nav */
+  @media screen and (max-width: 600px) {
+    .menu-list {
+      display: none;
+    }
+  
+    .toggle-menu {
+      display: block;
+      position: absolute;
+      top: 0.6rem;
+      right: -0.5rem;
+      cursor: pointer;
+      width: 40px;
+    }
+  
+    .menu-list.active {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      text-align: center;
+      top: 1.97rem;
+      left: 16.2rem;
+      background-color: #fa2020;
+      padding: 1rem;
+      z-index: 999;
+    }
+  
+    .menu-item {
+      margin-bottom: 10px;
+    }
+  }
+  
+  /* Responsive Mis viajes TabH */
+  @media screen and (max-width: 768px) {
+    .TabH {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+  
+    .Tab li {
+      flex-basis: auto;
+    }
+  
+    /* Ayuda "Ayuda-section" */
+    .Ayuda-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+  
+    .imagen-container {
+      order: 2; /* Cambia el orden del elemento en la columna */
+    }
+  
+    .container-ayuda-total {
+      order: 3; /* Cambia el orden del elemento en la columna */
+    }
+  }
+  
