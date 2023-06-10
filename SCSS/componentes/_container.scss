@@ -1,0 +1,322 @@
+.news-section-F,
+.news-section-S {
+  margin: 1em;
+  margin-bottom: 6em;
+
+  .news-title,
+  .news-description {
+    text-align: center;
+  }
+}
+
+.Millas-banner {
+  width: 100%;
+  height: 28em;
+}
+  
+    .millas-text-banner {
+      position: absolute;
+      top: 38%;
+      left: 34%;
+      transform: translate(-50%, -50%);
+      color: map-get($colores, color-white);
+      text-align: center;
+    
+      .millas-section__text1 {
+        font-family: "Nunito", sans-serif;
+        font-size: 2.5rem;
+        line-height: 1.2;
+        margin-bottom: 1.5rem;
+      }
+      
+      .millas-section__text2 {
+        font-family: "Arial", sans-serif;
+        font-size: 1.25rem;
+        line-height: 1.5;
+        margin-bottom: 2rem;
+      }
+    }
+  
+
+
+.content-program-millas {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  
+  .text-center-millas-1 {
+    font-size: 1.875rem;
+    line-height: 1.6;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+  }
+  
+  #Subtitle-M {
+    font-weight: bold;
+  }
+}
+
+/*El siguiente codigo es  Ayuda.html*/
+
+.container {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  width: 100%;
+
+  .Ayuda-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+    padding: 5px 0;
+    width: 100%;
+    max-width: 100%;
+
+    .imagen-container {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .Ayuda-banner {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .input-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+    }
+
+    .buscador {
+      display: flex;
+      align-items: center;
+
+      input[type="text"] {
+        border-radius: 1em;
+        margin-right: -8px;
+        border: 2px solid transparent;
+        animation: cambio-color 5s infinite;
+        transition: all 0.3s ease;
+      }
+
+      input[type="text"]:hover,
+      input[type="text"]:focus {
+        transform: scale(1.05);
+      }
+
+      button {
+        background-color: #000000;
+        border: none;
+        color: #ffffff;
+        font-size: 0.8rem;
+        font-weight: bold;
+        padding: 0.4em 0.8em;
+        border-radius: 1em;
+        margin-left: 9px;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+ /* Problema con el container y el button */
+    .ayuda-container {
+      background-color: rgb(212, 82, 169);
+      color: #fff;
+      border-radius: 8px;
+      padding: 30px;
+     } 
+      .ayuda-button {
+        background-color: #e0c995;
+        border: none;
+        color: #020202;
+        font-size: 0.8rem;
+        font-weight: bold;
+        padding: 0.5em 1em;
+        border-radius: 1em;
+        margin-bottom: 1em;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+          background-color: #dd2828;
+          color: #fff;
+        }
+      
+    
+
+      .inicio-ayuda {
+        font-weight: bold;
+        margin-bottom: 1em;
+        font-size: 2em;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+      }
+    }
+  }
+
+  /* Ayuda article */
+
+  .title-consultas-categorias {
+    font-size: 25px;
+  }
+
+  .list-categorias {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 8em;
+    justify-items: space-between;
+
+    .list-01,
+    .list-02,
+    .list-03,
+    .list-04 {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      cursor: pointer;
+
+      .antes-de-tu-viaje-01,
+      .equipaje-02,
+      .Tu-Reserva,
+      .Niñosybebés {
+        text-decoration: none;
+        color: #333;
+      }
+
+      .ico-passaport,
+      .ico-equipaje,
+      .ico-nyb {
+        width: 7em;
+        height: 7em;
+        transition: transform 0.3s ease;
+
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+
+      .ico-reserva {
+        width: 5em;
+        height: 5em;
+        transition: transform 0.3s ease;
+      }
+
+      .text-antesdetuviaje,
+      .text-equipaje,
+      .text-reserva,
+      .text-nyb {
+        font-weight: bold;
+        margin-top: 10px;
+        color: #020202;
+        transition: transform 0.3s ease;
+
+        &:hover {
+          transform: translateY(-5px);
+        }
+      }
+    }
+  }
+}
+
+@keyframes cambio-color {
+  0% {
+    border-color: #ff0000;
+  }
+  25% {
+    border-color: #00ff00;
+  }
+  50% {
+    border-color: #0000ff;
+  }
+  75% {
+    border-color: #ffff00;
+  }
+  100% {
+    border-color: #ff00ff;
+  }
+}
+
+
+.container-menu {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 30px;
+
+  .DescubreyCompra,
+  .Antes-de-tu-viaje,
+  .Tu-reserva,
+  .Servicios-adicionales {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .sub-text {
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: translateY(-5px);
+      }
+    }
+  }
+
+  .list-DyC,
+  .list-AV,
+  .list-TR,
+  .list-SA {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    li {
+      margin-bottom: 3px;
+      margin-right: -40px;
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: translateX(5px);
+      }
+
+      a {
+        text-decoration: none;
+        color: #000000;
+      }
+    }
+  }
+
+  .Menu-section {
+    margin-top: 85px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+
+    .DyC-icono,
+    .AV-icono,
+    .TR-icono,
+    .SA-icono {
+      height: 1.8em;
+      transition: all 0.3s ease;
+
+      &:hover {
+        transform: rotate(360deg);
+      }
+    }
+  }
+
+  .footer-modif {
+    margin-bottom: auto;
+    text-align: center;
+    width: 100%;
+  }
+}
