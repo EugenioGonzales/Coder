@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="vuelos, aerolíneas, boletos, destinos, viajes, ofertas"
+    />
+    <meta
+      name="description"
+      content="Descubre nuestros vuelos a destinos increíbles alrededor del mundo. Ofrecemos los mejores precios y una experiencia de viaje única. ¡Reserva hoy mismo!"
+    />
+    <meta name="author" content="Eugenio Gonzales" />
+    <meta name="copyright" content="Gael Inc." />
+
+    <link rel="icon" href="Imagenes/Logo/MiLogo.ico" />
+
+    <title>Easy Airlines</title>
+    <link rel="stylesheet" type="text/css" href="CSS/styles.css" />
+  </head>
+
+  <body>
+    <header class="Site-header">
+      <div>
+        <h1 class="promo-section__title">
+          <a href="ofertas_de_vuelo.html">Easy Airlines</a>
+        </h1>
+      </div>
+      <nav class="main-nav" role="navigation">
+        <div id="toggle-menu" class="toggle-menu">
+          <img src="Imagenes/Logo/hamburger-menu-icon.jpg" alt="hamburger-menuicon" />
+        </div>
+        <ul id="menu-list" class="menu-list" aria-label="Navegación principal">
+          <li class="menu-item">
+            <a href="ofertas_de_vuelo.html" class="menu-item__link">Ofertas de vuelos</a>
+          </li>
+          <li class="menu-item">
+            <a href="mis_viajes.html" class="menu-item__link">Mis Viajes</a>
+          </li>
+          <li class="menu-item">
+            <a href="millas.html" class="menu-item__link">Millas</a>
+          </li>
+          <li class="menu-item">
+            <a href="ayuda.html" class="menu-item__link">Ayuda</a>
+          </li>
+          <li class="menu-item">
+            <a href="menu.html" class="menu-item__link">Menu</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  
+    <main class="banner">
+      <div class="image-container">
+        <img class="img-banner" src="Imagenes/Img de viajes/playa_MisViajes.jpg" alt="Playas_de_verano" />
+      </div>
+      <div class="perfil-name-container-fluid">
+        <div class="text-center-title-welcome">Bienvenído</div>
+      </div>
+      <div class="welcome-perfil">
+        <div class="status-container">
+          <span class="title">Completa tu perfil</span>
+        </div>
+      </div>
+      <div class="flex-container">
+        <form class="form">
+          <div class="form__section">
+            <input type="email" class="form__input" placeholder="E-mail" />
+          </div>
+          <div class="form_section">
+            <input type="password" class="form__input" placeholder="Contraseña" />
+          </div>
+          <div class="form__section">
+            <input type="submit" class="form__input" />
+          </div>
+        </form>
+        <div class="form-img">
+          <div class="img-container">
+            <div>
+              <img src="Imagenes/Logo/iphone-email-computer-icons-symbol-envelope.jpg" title="Loco-email" />
+            </div>
+          </div>
+        </div>
+        <div class="gestion">
+          <p>Gestiona tu información, preferencias y seguridad para mejorar tu experiencia en Easy Airlines.</p>
+        </div>
+      </div>
+      <div class="tabH">
+        <ul class="tab">
+          <li class="Novedades">
+            <a href="#"><img class="ico-exclamacion" src="Imagenes/Banners/icono-!.jpg" title="icono-exclamacion" /><span>Novedades</span></a>
+          </li>
+          <li class="ico-miPerfil">
+            <a href="##"><img class="ico-MP" src="Imagenes/Banners/icono-Person.jpg" title="icono-miperfil" /><span>Mi perfil</span></a>
+          </li>
+          <li class="misViajes">
+            <a href="###"><img class="ico-MV" src="Imagenes/Banners/icono-plane.jpg" title="icono-plane" /><span>Mis Viajes</span></a>
+          </li>
+        </ul>
+      </div>
+    </main>
+    <footer class="footer-modif" role="contentinfo">
+      <p>Derechos reservados 2023 Easy Airlines</p>
+    </footer>
+  
+    <script>
+      document.querySelector("#toggle-menu").addEventListener("click", function () {
+        document.querySelector("#menu-list").classList.toggle("active");
+      });
+    </script>
+  </body>
+  
+</html>

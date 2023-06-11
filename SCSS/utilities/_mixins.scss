@@ -1,0 +1,13 @@
+
+/* Nav */
+
+@mixin hover-effect {
+    &:hover {
+      @content;
+    }
+  }
+
+  @mixin text-stroke($width, $color) {
+    -webkit-text-stroke-width: $width;
+    -webkit-text-stroke-color: $color;
+  }

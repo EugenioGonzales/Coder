@@ -1,0 +1,83 @@
+  /* Nav */
+  
+  .Site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: map-get($background, color-primary);
+    position: fixed;
+    margin: -1px;
+    z-index: 9999;
+    height: 7%;
+  
+    .promo-section__title {
+      font-size: map-get($font-size, font-size-base);
+      font-weight: normal;
+      transition: transform 0.3s;
+  
+      @include hover-effect {
+        transform: scale(1.1);
+      }
+  
+      a {
+        color: map-get($colores, color-white);
+        text-decoration: none;
+        padding: 25px;
+        font-size: map-get($font-size, font-size-base);
+        font-weight: bold;
+        font-family: "Nunito", sans-serif;
+  
+        @include hover-effect {
+          text-decoration: none;
+          color:  map-get($colores, color-white);
+        }
+      }
+    }
+  
+    .main-nav {
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-start;
+      margin: 0.7em;
+      margin-top: 2em;
+  
+      .menu-list {
+        list-style: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+  
+        .menu-item {
+          margin-bottom: 20px;
+          transform: scale(1.1);
+  
+          @include hover-effect {
+            transition: transform 0.3s;
+          }
+  
+          .menu-item__link {
+            color: map-get($colores, color-white);
+            text-decoration: none;
+            padding: 9px;
+  
+            @include hover-effect {
+              color: map-get($colores, color-white);
+              border-radius: 13px;
+              text-decoration: none;
+              padding: 0.9em;
+            }
+          }
+        }
+      }
+    }
+  
+    .toggle-menu {
+      img {
+        max-width: 50%;
+      }
+  
+      display: none;
+    }
+  }
+     
