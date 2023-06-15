@@ -107,9 +107,9 @@
       }
 
       button {
-        background-color: #000000;
+        background-color: map-get($background, color-eighth);
         border: none;
-        color: #ffffff;
+        color:  map-get($colores, color-white);
         font-size: 0.8rem;
         font-weight: bold;
         padding: 0.4em 0.8em;
@@ -123,18 +123,18 @@
         }
       }
     }
- /* Problema con el container y el button */
+
     .ayuda-container {
-      background-color: rgb(212, 82, 169);
-    color: #fff;
+    background-color: map-get($background, color-nineth);
+    color: map-get($colores, color-white);
     border-radius: 18px;
     padding: 30px;
     width: 90%;
      } 
       .ayuda-button {
-        background-color: #e0c995;
+        background-color:  map-get($background, color-tenth);
         border: none;
-        color: #020202;
+        color: map-get($colores, color-black);
         font-size: 0.8rem;
         font-weight: bold;
         padding: 0.5em 1em;
@@ -144,8 +144,8 @@
         transition: background-color 0.3s ease;
 
         &:hover {
-          background-color: #dd2828;
-          color: #fff;
+          background-color: map-get($background, color-primary);
+          color: map-get($colores, color-white);
         }
       
     
@@ -190,7 +190,7 @@
       .Tu-Reserva,
       .Niñosybebés {
         text-decoration: none;
-        color: #333;
+        color: map-get($colores , color-sombra-oscura-gris);
       }
 
       .ico-passaport,
@@ -217,7 +217,7 @@
       .text-nyb {
         font-weight: bold;
         margin-top: 10px;
-        color: #020202;
+        color: map-get($colores, color-black);
         transition: transform 0.3s ease;
 
         &:hover {
@@ -230,23 +230,23 @@
 
 @keyframes cambio-color {
   0% {
-    border-color: #ff0000;
+    border-color: map-get($cambio-color, border-color-rojo);
   }
   25% {
-    border-color: #00ff00;
+    border-color: map-get($cambio-color, border-color-verde);
   }
   50% {
-    border-color: #0000ff;
+    border-color: map-get($cambio-color, border-color-azul);
   }
   75% {
-    border-color: #ffff00;
+    border-color: map-get($cambio-color, border-color-amarillo);
   }
   100% {
-    border-color: #ff00ff;
+    border-color: map-get($cambio-color, border-color-rojo);
   }
 }
 
-
+ 
 .container-menu {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -291,7 +291,7 @@
 
       a {
         text-decoration: none;
-        color: #000000;
+        color: map-get($colores, color-black);
       }
     }
   }

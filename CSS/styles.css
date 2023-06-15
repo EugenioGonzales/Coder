@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* Estilos generales */
+/* Nav */ /* Estilos generales */
 /* Estilos para pantallas más grandes que un tamaño de escritorio */
 @media screen and (min-width: 1024px) {
   .menu-list {
@@ -15,7 +15,7 @@
   display: none;
 }
 
-.toggle-menu {
+.Site-header .toggle-menu {
   display: block;
   position: absolute;
   top: 0.6rem;
@@ -46,7 +46,7 @@
   .menu-list {
     display: none;
   }
-  .toggle-menu {
+  .Site-header .toggle-menu {
     display: block;
     position: absolute;
     top: 0.6rem;
@@ -93,7 +93,6 @@
     order: 3; /* Cambia el orden del elemento en la columna */
   }
 }
-/* Nav */
 /* Nav */
 .Site-header {
   display: flex;
@@ -502,7 +501,6 @@ input[type=submit] {
   padding: 5px 0;
   width: 100%;
   max-width: 100%;
-  /* Problema con el container y el button */
 }
 .container .Ayuda-section .imagen-container {
   display: flex;
@@ -550,7 +548,7 @@ input[type=submit] {
 }
 .container .Ayuda-section .ayuda-container {
   background-color: rgb(212, 82, 169);
-  color: #fff;
+  color: #ffffff;
   border-radius: 18px;
   padding: 30px;
   width: 90%;
@@ -558,7 +556,7 @@ input[type=submit] {
 .container .Ayuda-section .ayuda-button {
   background-color: #e0c995;
   border: none;
-  color: #020202;
+  color: #000000;
   font-size: 0.8rem;
   font-weight: bold;
   padding: 0.5em 1em;
@@ -568,8 +566,8 @@ input[type=submit] {
   transition: background-color 0.3s ease;
 }
 .container .Ayuda-section .ayuda-button:hover {
-  background-color: #dd2828;
-  color: #fff;
+  background-color: #fa2020;
+  color: #ffffff;
 }
 .container .Ayuda-section .ayuda-button .inicio-ayuda {
   font-weight: bold;
@@ -674,7 +672,7 @@ input[type=submit] {
 .container .list-categorias .list-04 .text-nyb {
   font-weight: bold;
   margin-top: 10px;
-  color: #020202;
+  color: #000000;
   transition: transform 0.3s ease;
 }
 .container .list-categorias .list-01 .text-antesdetuviaje:hover,
@@ -710,7 +708,7 @@ input[type=submit] {
     border-color: #ffff00;
   }
   100% {
-    border-color: #ff00ff;
+    border-color: #ff0000;
   }
 }
 .container-menu {
