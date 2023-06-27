@@ -1,93 +1,7 @@
   
 /* Estilos generales */
-
-/* Estilos para pantallas más grandes que un tamaño de escritorio */
  /* Responsive Nav */
-@media screen and (min-width: 1024px) {
-  .toggle-menu {
-    display: none;
 
-  .Site-header {
-    .main-nav {
-      .menu-list {
-        list-style: none;
-        display: flex;
-        margin: 0;
-        padding: 0;
-        
-        
-        }
-      }
-    }
-  }
-  
- 
-  .menu-list {
-    display: none;
-  }
-  
-  .Site-header {
-    .toggle-menu {
-      display: block;
-      position: absolute;
-      top: 0.6rem;
-      right: -0.5rem;
-      cursor: pointer;
-      width: 40px;
-    }
-  }
-  
-
-  .menu-list.active {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    text-align: center;
-    top: 1.97rem;
-    left: 16.2rem;
-    background-color: map-get($background, color-primary);
-    padding: 1rem;
-    z-index: 999;
-  }
-  
-  .menu-item {
-    margin-bottom: 10px;
-  }
-  
-  
-  /* Responsive Nav */
-  @media screen and (max-width: 600px) {
-    .menu-list {
-      display: none;
-      
-      .Site-header {
-        .toggle-menu {
-          display: block;
-          position: absolute;
-          top: 0.6rem;
-          right: -0.5rem;
-          cursor: pointer;
-          width: 40px;
-        }
-      }
-    }
-    
-    .menu-list.active {
-      display: flex;
-      flex-direction: column;
-      position: absolute;
-      text-align: center;
-      top: 1.97rem;
-      left: 16.2rem;
-      background-color: map-get($background, color-primary);
-      padding: 1rem;
-      z-index: 999;
-    }
-    
-    .menu-item {
-      margin-bottom: 10px;
-    }
-    
   
   /* Responsive Mis viajes TabH */
   @media screen and (max-width: 768px) {
@@ -117,5 +31,4 @@
       order: 3; /* Cambia el orden del elemento en la columna */
     }
   }
-}
-}
+
