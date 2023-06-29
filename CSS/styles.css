@@ -11,8 +11,8 @@
   background-color: #000000; /* Color negro */
 }
 
-.ms-custom {
-  margin-left: 60%; /* Ajusta el valor del margen según tus necesidades */
+.left-menu {
+  align-items: end;
 }
 
 @media (max-width: 991.98px) {
