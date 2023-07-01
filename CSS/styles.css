@@ -358,9 +358,12 @@ input[type=submit] {
 .container {
   display: grid;
   width: 100%;
-  /* Ayuda article */
+  padding: 0;
+  margin: 0;
+  max-width: 2000px;
 }
-.container .Ayuda-section {
+
+.Ayuda-section {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
@@ -369,36 +372,36 @@ input[type=submit] {
   width: 100%;
   max-width: 100%;
 }
-.container .Ayuda-section .imagen-container {
+.Ayuda-section .imagen-container {
   display: flex;
   flex-direction: column;
 }
-.container .Ayuda-section .Ayuda-banner {
+.Ayuda-section .Ayuda-banner {
   width: 100%;
   height: auto;
   border-radius: 8px;
 }
-.container .Ayuda-section .input-container {
+.Ayuda-section .input-container {
   display: flex;
   justify-content: center;
   margin-top: 10px;
 }
-.container .Ayuda-section .buscador {
+.Ayuda-section .buscador {
   display: flex;
   align-items: center;
 }
-.container .Ayuda-section .buscador input[type=text] {
+.Ayuda-section .buscador input[type=text] {
   border-radius: 1em;
   margin-right: -8px;
   border: 2px solid transparent;
   animation: cambio-color 5s infinite;
   transition: all 0.3s ease;
 }
-.container .Ayuda-section .buscador input[type=text]:hover,
-.container .Ayuda-section .buscador input[type=text]:focus {
+.Ayuda-section .buscador input[type=text]:hover,
+.Ayuda-section .buscador input[type=text]:focus {
   transform: scale(1.05);
 }
-.container .Ayuda-section .buscador button {
+.Ayuda-section .buscador button {
   background-color: #000000;
   border: none;
   color: #ffffff;
@@ -410,17 +413,17 @@ input[type=submit] {
   cursor: pointer;
   transition: transform 0.3s ease;
 }
-.container .Ayuda-section .buscador button:hover {
+.Ayuda-section .buscador button:hover {
   transform: scale(1.1);
 }
-.container .Ayuda-section .ayuda-container {
+.Ayuda-section .ayuda-container {
   background-color: rgb(212, 82, 169);
   color: #ffffff;
   border-radius: 18px;
   padding: 30px;
   width: 90%;
 }
-.container .Ayuda-section .ayuda-button {
+.Ayuda-section .ayuda-button {
   background-color: #e0c995;
   border: none;
   color: #000000;
@@ -432,30 +435,33 @@ input[type=submit] {
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
-.container .Ayuda-section .ayuda-button:hover {
+.Ayuda-section .ayuda-button:hover {
   background-color: #fa2020;
   color: #ffffff;
 }
-.container .Ayuda-section .ayuda-button .inicio-ayuda {
+.Ayuda-section .ayuda-button .inicio-ayuda {
   font-weight: bold;
   margin-bottom: 1em;
   font-size: 2em;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
-.container .title-consultas-categorias {
+
+/* Ayuda article */
+.title-consultas-categorias {
   font-size: 25px;
 }
-.container .list-categorias {
+
+.list-categorias {
   list-style-type: none;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 8em;
   justify-items: space-between;
 }
-.container .list-categorias .list-01,
-.container .list-categorias .list-02,
-.container .list-categorias .list-03,
-.container .list-categorias .list-04 {
+.list-categorias .list-01,
+.list-categorias .list-02,
+.list-categorias .list-03,
+.list-categorias .list-04 {
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -464,100 +470,100 @@ input[type=submit] {
   text-align: center;
   cursor: pointer;
 }
-.container .list-categorias .list-01 .antes-de-tu-viaje-01,
-.container .list-categorias .list-01 .equipaje-02,
-.container .list-categorias .list-01 .Tu-Reserva,
-.container .list-categorias .list-01 .Niñosybebés,
-.container .list-categorias .list-02 .antes-de-tu-viaje-01,
-.container .list-categorias .list-02 .equipaje-02,
-.container .list-categorias .list-02 .Tu-Reserva,
-.container .list-categorias .list-02 .Niñosybebés,
-.container .list-categorias .list-03 .antes-de-tu-viaje-01,
-.container .list-categorias .list-03 .equipaje-02,
-.container .list-categorias .list-03 .Tu-Reserva,
-.container .list-categorias .list-03 .Niñosybebés,
-.container .list-categorias .list-04 .antes-de-tu-viaje-01,
-.container .list-categorias .list-04 .equipaje-02,
-.container .list-categorias .list-04 .Tu-Reserva,
-.container .list-categorias .list-04 .Niñosybebés {
+.list-categorias .list-01 .antes-de-tu-viaje-01,
+.list-categorias .list-01 .equipaje-02,
+.list-categorias .list-01 .Tu-Reserva,
+.list-categorias .list-01 .Niñosybebés,
+.list-categorias .list-02 .antes-de-tu-viaje-01,
+.list-categorias .list-02 .equipaje-02,
+.list-categorias .list-02 .Tu-Reserva,
+.list-categorias .list-02 .Niñosybebés,
+.list-categorias .list-03 .antes-de-tu-viaje-01,
+.list-categorias .list-03 .equipaje-02,
+.list-categorias .list-03 .Tu-Reserva,
+.list-categorias .list-03 .Niñosybebés,
+.list-categorias .list-04 .antes-de-tu-viaje-01,
+.list-categorias .list-04 .equipaje-02,
+.list-categorias .list-04 .Tu-Reserva,
+.list-categorias .list-04 .Niñosybebés {
   text-decoration: none;
   color: #333;
 }
-.container .list-categorias .list-01 .ico-passaport,
-.container .list-categorias .list-01 .ico-equipaje,
-.container .list-categorias .list-01 .ico-nyb,
-.container .list-categorias .list-02 .ico-passaport,
-.container .list-categorias .list-02 .ico-equipaje,
-.container .list-categorias .list-02 .ico-nyb,
-.container .list-categorias .list-03 .ico-passaport,
-.container .list-categorias .list-03 .ico-equipaje,
-.container .list-categorias .list-03 .ico-nyb,
-.container .list-categorias .list-04 .ico-passaport,
-.container .list-categorias .list-04 .ico-equipaje,
-.container .list-categorias .list-04 .ico-nyb {
+.list-categorias .list-01 .ico-passaport,
+.list-categorias .list-01 .ico-equipaje,
+.list-categorias .list-01 .ico-nyb,
+.list-categorias .list-02 .ico-passaport,
+.list-categorias .list-02 .ico-equipaje,
+.list-categorias .list-02 .ico-nyb,
+.list-categorias .list-03 .ico-passaport,
+.list-categorias .list-03 .ico-equipaje,
+.list-categorias .list-03 .ico-nyb,
+.list-categorias .list-04 .ico-passaport,
+.list-categorias .list-04 .ico-equipaje,
+.list-categorias .list-04 .ico-nyb {
   width: 7em;
   height: 7em;
   transition: transform 0.3s ease;
 }
-.container .list-categorias .list-01 .ico-passaport:hover,
-.container .list-categorias .list-01 .ico-equipaje:hover,
-.container .list-categorias .list-01 .ico-nyb:hover,
-.container .list-categorias .list-02 .ico-passaport:hover,
-.container .list-categorias .list-02 .ico-equipaje:hover,
-.container .list-categorias .list-02 .ico-nyb:hover,
-.container .list-categorias .list-03 .ico-passaport:hover,
-.container .list-categorias .list-03 .ico-equipaje:hover,
-.container .list-categorias .list-03 .ico-nyb:hover,
-.container .list-categorias .list-04 .ico-passaport:hover,
-.container .list-categorias .list-04 .ico-equipaje:hover,
-.container .list-categorias .list-04 .ico-nyb:hover {
+.list-categorias .list-01 .ico-passaport:hover,
+.list-categorias .list-01 .ico-equipaje:hover,
+.list-categorias .list-01 .ico-nyb:hover,
+.list-categorias .list-02 .ico-passaport:hover,
+.list-categorias .list-02 .ico-equipaje:hover,
+.list-categorias .list-02 .ico-nyb:hover,
+.list-categorias .list-03 .ico-passaport:hover,
+.list-categorias .list-03 .ico-equipaje:hover,
+.list-categorias .list-03 .ico-nyb:hover,
+.list-categorias .list-04 .ico-passaport:hover,
+.list-categorias .list-04 .ico-equipaje:hover,
+.list-categorias .list-04 .ico-nyb:hover {
   transform: scale(1.1);
 }
-.container .list-categorias .list-01 .ico-reserva,
-.container .list-categorias .list-02 .ico-reserva,
-.container .list-categorias .list-03 .ico-reserva,
-.container .list-categorias .list-04 .ico-reserva {
+.list-categorias .list-01 .ico-reserva,
+.list-categorias .list-02 .ico-reserva,
+.list-categorias .list-03 .ico-reserva,
+.list-categorias .list-04 .ico-reserva {
   width: 5em;
   height: 5em;
   transition: transform 0.3s ease;
 }
-.container .list-categorias .list-01 .text-antesdetuviaje,
-.container .list-categorias .list-01 .text-equipaje,
-.container .list-categorias .list-01 .text-reserva,
-.container .list-categorias .list-01 .text-nyb,
-.container .list-categorias .list-02 .text-antesdetuviaje,
-.container .list-categorias .list-02 .text-equipaje,
-.container .list-categorias .list-02 .text-reserva,
-.container .list-categorias .list-02 .text-nyb,
-.container .list-categorias .list-03 .text-antesdetuviaje,
-.container .list-categorias .list-03 .text-equipaje,
-.container .list-categorias .list-03 .text-reserva,
-.container .list-categorias .list-03 .text-nyb,
-.container .list-categorias .list-04 .text-antesdetuviaje,
-.container .list-categorias .list-04 .text-equipaje,
-.container .list-categorias .list-04 .text-reserva,
-.container .list-categorias .list-04 .text-nyb {
+.list-categorias .list-01 .text-antesdetuviaje,
+.list-categorias .list-01 .text-equipaje,
+.list-categorias .list-01 .text-reserva,
+.list-categorias .list-01 .text-nyb,
+.list-categorias .list-02 .text-antesdetuviaje,
+.list-categorias .list-02 .text-equipaje,
+.list-categorias .list-02 .text-reserva,
+.list-categorias .list-02 .text-nyb,
+.list-categorias .list-03 .text-antesdetuviaje,
+.list-categorias .list-03 .text-equipaje,
+.list-categorias .list-03 .text-reserva,
+.list-categorias .list-03 .text-nyb,
+.list-categorias .list-04 .text-antesdetuviaje,
+.list-categorias .list-04 .text-equipaje,
+.list-categorias .list-04 .text-reserva,
+.list-categorias .list-04 .text-nyb {
   font-weight: bold;
   margin-top: 10px;
   color: #000000;
   transition: transform 0.3s ease;
 }
-.container .list-categorias .list-01 .text-antesdetuviaje:hover,
-.container .list-categorias .list-01 .text-equipaje:hover,
-.container .list-categorias .list-01 .text-reserva:hover,
-.container .list-categorias .list-01 .text-nyb:hover,
-.container .list-categorias .list-02 .text-antesdetuviaje:hover,
-.container .list-categorias .list-02 .text-equipaje:hover,
-.container .list-categorias .list-02 .text-reserva:hover,
-.container .list-categorias .list-02 .text-nyb:hover,
-.container .list-categorias .list-03 .text-antesdetuviaje:hover,
-.container .list-categorias .list-03 .text-equipaje:hover,
-.container .list-categorias .list-03 .text-reserva:hover,
-.container .list-categorias .list-03 .text-nyb:hover,
-.container .list-categorias .list-04 .text-antesdetuviaje:hover,
-.container .list-categorias .list-04 .text-equipaje:hover,
-.container .list-categorias .list-04 .text-reserva:hover,
-.container .list-categorias .list-04 .text-nyb:hover {
+.list-categorias .list-01 .text-antesdetuviaje:hover,
+.list-categorias .list-01 .text-equipaje:hover,
+.list-categorias .list-01 .text-reserva:hover,
+.list-categorias .list-01 .text-nyb:hover,
+.list-categorias .list-02 .text-antesdetuviaje:hover,
+.list-categorias .list-02 .text-equipaje:hover,
+.list-categorias .list-02 .text-reserva:hover,
+.list-categorias .list-02 .text-nyb:hover,
+.list-categorias .list-03 .text-antesdetuviaje:hover,
+.list-categorias .list-03 .text-equipaje:hover,
+.list-categorias .list-03 .text-reserva:hover,
+.list-categorias .list-03 .text-nyb:hover,
+.list-categorias .list-04 .text-antesdetuviaje:hover,
+.list-categorias .list-04 .text-equipaje:hover,
+.list-categorias .list-04 .text-reserva:hover,
+.list-categorias .list-04 .text-nyb:hover {
   transform: translateY(-5px);
 }
 
