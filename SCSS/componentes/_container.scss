@@ -10,22 +10,24 @@
 }
 
 /*El siguiente codigo es el Millas.*/
-.Millas-banner {
-  width: 100%;
-  height: 28em;
-}
-  
+
+    .millas-section {
+      width: 100%;
+      height: 30em;
+      background-image: url("../../imagenes/Banners/Millasoffcopy.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;    
+    }     
+
     .millas-text-banner {
-      margin-left: 2%;
-      margin-top: -30%;
+      margin-left: 10%;
+      padding: 4em;
       color: map-get($colores, color-white);
       text-align: center;
       display: flex;
       
 
-      .millas-content-wrapper {
-        position: relative;
-      }
+      
     
       .millas-section__text1 {
         font-family: "Nunito", sans-serif;
@@ -44,7 +46,7 @@
   
 .content-main-millas {
   display: flex;
-  margin-top: 20%;
+  margin-top: 2%;
   
 }
 
@@ -69,7 +71,6 @@
 
 .container {
   display: grid;
-  grid-template-rows: 1fr 1fr;
   width: 100%;
 
   .Ayuda-section {
