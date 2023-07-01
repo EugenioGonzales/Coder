@@ -4,16 +4,16 @@
     background-color: #000000; /* Color negro */
   }
   
-  .left-menu {
-    align-items: end;
-  }
-  
+  .ms-custom {
+    margin-left: 50%;
+}
 
   @media (max-width: 991.98px) {
     .navbar-collapse.collapse.show ul.navbar-nav {
       display: flex;
       flex-direction: column;
       text-align: center;
+      justify-content:between;
     }
     
     

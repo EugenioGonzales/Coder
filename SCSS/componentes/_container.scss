@@ -9,18 +9,23 @@
   }
 }
 
+/*El siguiente codigo es el Millas.*/
 .Millas-banner {
   width: 100%;
   height: 28em;
 }
   
     .millas-text-banner {
-      position: absolute;
-      top: 38%;
-      left: 34%;
-      transform: translate(-50%, -50%);
+      margin-left: 2%;
+      margin-top: -30%;
       color: map-get($colores, color-white);
       text-align: center;
+      display: flex;
+      
+
+      .millas-content-wrapper {
+        position: relative;
+      }
     
       .millas-section__text1 {
         font-family: "Nunito", sans-serif;
@@ -37,7 +42,11 @@
       }
     }
   
-
+.content-main-millas {
+  display: flex;
+  margin-top: 20%;
+  
+}
 
 .content-program-millas {
   text-align: center;
@@ -246,11 +255,11 @@
   }
 }
 
- 
+ /* Menu */
 .container-menu {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-gap: 30px;
+  grid-gap: 10px;
 
   .DescubreyCompra,
   .Antes-de-tu-viaje,
@@ -315,9 +324,4 @@
     }
   }
 
-  .footer-modif {
-    margin-bottom: auto;
-    text-align: center;
-    width: 100%;
-  }
 }
