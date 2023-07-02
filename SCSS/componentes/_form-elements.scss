@@ -1,11 +1,11 @@
-// Estilos para los campos de fecha (Datepicker-field)
+/* El siguiente codigo es parte del index etiqueta main */
 .datepicker-field {
   border: 0.1em solid map-get($colores, color-border);
   border-radius: 1.5em;
   padding: 0.1em;
   height: 1.8em;
 
-  // Estilos adicionales para los campos de fecha cuando tienen el foco
+  
   &:focus {
     outline: none;
   }
@@ -21,7 +21,6 @@
   cursor: pointer;
   margin: 0.2em 1em;
 
-  // Estilos adicionales al pasar el mouse sobre los botones
   &:hover {
     background-color:  map-get($background, color-fourth);
   }

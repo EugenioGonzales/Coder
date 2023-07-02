@@ -1,6 +1,4 @@
-
 /* El siguiente codigo es el Main */
-
 .site-main {
   overflow-x: hidden;
 
@@ -17,8 +15,7 @@
 }
 
  /*El siguiente codigo es el Mis viajes.html*/
-
- .flex-container {
+.flex-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -77,9 +74,7 @@
   }
 
 
-  /* Menu.html */
-
-
+  /* El siguiente codigo es el Menu */
   .container-menu {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -148,5 +143,3 @@
         }
       }
     } 
-  
-  
