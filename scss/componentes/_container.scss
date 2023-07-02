@@ -1,0 +1,332 @@
+/* El siguiente codigo es parte del index */
+.news-section-F,
+.news-section-S {
+  margin: 1em;
+  margin-bottom: 6em;
+
+  .news-title,
+  .news-description {
+    text-align: center;
+  }
+}
+
+/*El siguiente codigo es el Millas.*/
+
+    .millas-section {
+      width: 100%;
+      height: 30em;
+      background-image: url("../imagenes/Banners/millasoffcopy.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;    
+    }     
+
+    .millas-text-banner {
+      margin-left: 10%;
+      padding: 4em;
+      color: map-get($colores, color-white);
+      text-align: center;
+      display: flex;
+      
+
+      
+    
+      .millas-section__text1 {
+        font-family: "Nunito", sans-serif;
+        font-size: 2.5rem;
+        line-height: 1.2;
+        margin-bottom: 1.5rem;
+      }
+      
+      .millas-section__text2 {
+        font-family: "Arial", sans-serif;
+        font-size: 1.25rem;
+        line-height: 1.5;
+        margin-bottom: 2rem;
+      }
+    }
+  
+.content-main-millas {
+  display: flex;
+  margin-top: 2%;
+  
+}
+
+.content-program-millas {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  
+  .text-center-millas-1 {
+    font-size: 1.875rem;
+    line-height: 1.6;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+  }
+  
+  #Subtitle-M {
+    font-weight: bold;
+  }
+}
+
+/*El siguiente codigo es  Ayuda.html*/
+
+.container {
+  display: grid;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  max-width: 2000px;
+}
+
+  .Ayuda-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+    padding: 5px 0;
+    width: 100%;
+    max-width: 100%;
+
+    .imagen-container {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .Ayuda-banner {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .input-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+    }
+
+    .buscador {
+      display: flex;
+      align-items: center;
+
+      input[type="text"] {
+        border-radius: 1em;
+        margin-right: -8px;
+        border: 2px solid transparent;
+        animation: cambio-color 5s infinite;
+        transition: all 0.3s ease;
+      }
+
+      input[type="text"]:hover,
+      input[type="text"]:focus {
+        transform: scale(1.05);
+      }
+
+      button {
+        background-color: map-get($background, color-eighth);
+        border: none;
+        color:  map-get($colores, color-white);
+        font-size: 0.8rem;
+        font-weight: bold;
+        padding: 0.4em 0.8em;
+        border-radius: 1em;
+        margin-left: 9px;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+
+    .ayuda-container {
+    background-color: map-get($background, color-nineth);
+    color: map-get($colores, color-white);
+    border-radius: 18px;
+    padding: 30px;
+    width: 90%;
+     } 
+      .ayuda-button {
+        background-color:  map-get($background, color-tenth);
+        border: none;
+        color: map-get($colores, color-black);
+        font-size: 0.8rem;
+        font-weight: bold;
+        padding: 0.5em 1em;
+        border-radius: 1em;
+        margin-bottom: 1em;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+          background-color: map-get($background, color-primary);
+          color: map-get($colores, color-white);
+        }
+      
+    
+
+      .inicio-ayuda {
+        font-weight: bold;
+        margin-bottom: 1em;
+        font-size: 2em;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+      }
+    }
+  }
+
+  /* Ayuda article */
+
+  .title-consultas-categorias {
+    font-size: 25px;
+  }
+
+  .list-categorias {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 8em;
+    justify-items: space-between;
+
+    .list-01,
+    .list-02,
+    .list-03,
+    .list-04 {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      cursor: pointer;
+
+      .antes-de-tu-viaje-01,
+      .equipaje-02,
+      .Tu-Reserva,
+      .Niñosybebés {
+        text-decoration: none;
+        color: map-get($colores , color-sombra-oscura-gris);
+      }
+
+      .ico-passaport,
+      .ico-equipaje,
+      .ico-nyb {
+        width: 7em;
+        height: 7em;
+        transition: transform 0.3s ease;
+
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+
+      .ico-reserva {
+        width: 5em;
+        height: 5em;
+        transition: transform 0.3s ease;
+      }
+
+      .text-antesdetuviaje,
+      .text-equipaje,
+      .text-reserva,
+      .text-nyb {
+        margin-top: 10px;
+        color: map-get($colores, color-black);
+        transition: transform 0.3s ease;
+
+        &:hover {
+          transform: translateY(-5px);
+        }
+      }
+    }
+  }
+
+
+@keyframes cambio-color {
+  0% {
+    border-color: map-get($cambio-color, border-color-rojo);
+  }
+  25% {
+    border-color: map-get($cambio-color, border-color-verde);
+  }
+  50% {
+    border-color: map-get($cambio-color, border-color-azul);
+  }
+  75% {
+    border-color: map-get($cambio-color, border-color-amarillo);
+  }
+  100% {
+    border-color: map-get($cambio-color, border-color-rojo);
+  }
+}
+
+ /* El siguiente codigo es el menu */
+.container-menu {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 10px;
+
+  .DescubreyCompra,
+  .Antes-de-tu-viaje,
+  .Tu-reserva,
+  .Servicios-adicionales {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .sub-text {
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: translateY(-5px);
+      }
+    }
+  }
+
+  .list-DyC,
+  .list-AV,
+  .list-TR,
+  .list-SA {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    li {
+      margin-bottom: 3px;
+      margin-right: -40px;
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: translateX(5px);
+      }
+
+      a {
+        text-decoration: none;
+        color: map-get($colores, color-black);
+      }
+    }
+  }
+
+  .Menu-section {
+    margin-top: 85px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+
+    .DyC-icono,
+    .AV-icono,
+    .TR-icono,
+    .SA-icono {
+      height: 1.8em;
+      transition: all 0.3s ease;
+
+      &:hover {
+        transform: rotate(360deg);
+      }
+    }
+  }
+
+}
