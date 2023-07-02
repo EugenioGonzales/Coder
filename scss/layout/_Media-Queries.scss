@@ -1,0 +1,32 @@
+  
+  
+ 
+  @media screen and (max-width: 768px) {
+      /* Responsive Mis viajes TabH */   
+    .TabH {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+  
+    .Tab li {
+      flex-basis: auto;
+    }
+  
+    /* Ayuda "Ayuda-section" */
+    .container .Ayuda-section {
+      grid-template-columns: 1fr;
+      justify-items: center;
+  }
+  
+    .imagen-container {
+      order: 2; 
+    }
+  
+    .container-ayuda-total {
+      order: 3; 
+    }
+
+
+  }
+
