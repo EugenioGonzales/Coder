@@ -42,6 +42,7 @@
       border-bottom: 3px solid map-get($colores, color-border-bottom);
       background: transparent;
       color: map-get($colores, color-white);
+      border-radius: 1.4rem;
   
       &:focus {
         background: linear-gradient(to bottom, transparent, map-get($background, color-sixth));
